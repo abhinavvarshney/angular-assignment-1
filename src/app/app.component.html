@@ -30,7 +30,7 @@
         <h4 class="text-center">List</h4>
         <h6 *ngIf="data.length===0" class="p-2 text-center">Nothing in the list</h6>
         <ul *ngFor="let ele of data;index as idx" class="list-group">
-          <li class="list-group-item list-group-item-action" [class.blueBackground]="(idx+1)%5==0&&idx!=0">{{idx+1}}.
+          <li class="list-group-item" [class.blueBackground]="(idx+1)%5==0&&idx!=0">{{idx+1}}.
             {{ele}}</li>
         </ul>
       </div>
